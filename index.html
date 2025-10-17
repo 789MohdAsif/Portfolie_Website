@@ -138,81 +138,106 @@
 		</div>
 	</nav>
 	<section id="home-section" class="hero">
-		<div class="home-slider  owl-carousel">
-			<div class="slider-item ">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
-						data-scrollax-parent="true">
-						<div class="one-third js-fullheight order-md-last img"
-							 <div class="block-20" style="background-image: url('images/Analytics.gif'); height:200px; background-size:cover; background-position:center;">
-</div> 
+        <div class="overlay"></div>
+        
+        <!-- ✅ 5 ROTATING ANALYTICS IMAGES -->
+        <div class="home-slider owl-carousel owl-theme">
+    <!-- ✅ IMAGE 1: FIXED - Data Analytics Dashboard -->
+    <div class="slider-item">
+        <div class="image-slider">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGF0YS1hbmFseXRpY3MtZGF0YS12aXNhbGl6YXRpb24vM3o3YnRNeUlScXl2RXVISmEvZ2lwaHkuZ2lm/giphy.gif" alt="Analytics Dashboard">
+        </div>
+    </div>
+    
+    <!-- ✅ IMAGE 2: Python Analytics -->
+    <div class="slider-item">
+        <div class="image-slider">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHl0aG9uLWFuYWx5dGljcy1kYXRhLXNjaWVuY2UvM3o3YnRNeUlSdXl4RnVIanMvZ2lwaHkuZ2lm/giphy.gif" alt="Python Analytics">
+        </div>
+    </div>
+    
+    <!-- ✅ IMAGE 3: Data Visualization -->
+    <div class="slider-item">
+        <div class="image-slider">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGF0YS12aXNhbC1jaGFydHMtZ3JhcGhzLWJ1c2luZXNzLWludGVsbGlnZW5jZS8zby13dUhLMm5Bd3d3NWhqYS9naXBoeS5naWY/giphy.gif" alt="Data Viz">
+        </div>
+    </div>
+    
+    <!-- ✅ IMAGE 4: ML Analytics -->
+    <div class="slider-item">
+        <div class="image-slider">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWFjaGluZS1sZWFybmluZy1haS1kYXRhLXNjaWVuY2UtYW5hbHl0aWNzLzNvN2J0TXlJcnlseEZ1SEpqYS9naXBoeS5naWY/giphy.gif" alt="ML Analytics">
+        </div>
+    </div>
+    
+    <!-- ✅ IMAGE 5: Business Intelligence -->
+    <div class="slider-item">
+        <div class="image-slider">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGF0YS1hbmFseXRpY3MtYmlnLWRhdGEtYml6bmVzcy1pbnN0aWdodHMvM3o3YnRNeUlSdXlyRnVIanMvZ2lwaHkuZ2lm/giphy.gif" alt="Business Analytics">
+        </div>
+    </div>
+</div>
 
-							<div class="overlay"></div>
-						</div>
-						<div class="one-forth d-flex  align-items-center ftco-animate"
-							data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">Hi!</span>
-								<h1 class="mb-4 mt-3">This is <span>Mohd Asif</span></h1>
-
-								<!-- Element to contain animated typing -->
-								<span id="typing-animation"></span>
-
-								<script>
-
-									// Initialize the typing animation
-									const typingAnimationElement = document.getElementById('typing-animation');
-
-									// Create an array of typing text
-									const typingTexts = [
-										'Graduate ',
-										'SelfLearning  ',
-										'Data Science   ',
-										'Data Analytics',
-										'Data Visulizations',
-										'ML Engineering'
-									];
-
-									// Create a function to display the typing animation for a given text
-									function playTypingAnimation(text) {
-										// Loop through each character and add it to the element
-										for (let i = 0; i < text.length; i++) {
-											setTimeout(() => {
-												typingAnimationElement.textContent += text[i];
-											}, i * 200); // Increase the delay to slow down the typing animation
-										}
-
-										// Once the animation is complete, reset the text and start over
-										setTimeout(() => {
-											typingAnimationElement.textContent = '';
-											playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-										}, text.length * 200);
-									}
-
-									// Start the typing animation loop
-									playTypingAnimation(typingTexts[0]);
-
-								</script>
-
-								<br>
-								<br>
-								<h2>python Programming,Scripting,Data Analysis & Visualization</h2>
-								<!-- <h2 class="d-flex" style="margin-bottom: 0">As a Fresher</h2> -->
-								<!-- <br> -->
-								<p><a href="https://www.linkedin.com/in/mdasif1998/"
-										class="btn btn-primary py-3 px-4">LinkedIn</a>
-									<a href="https://github.com/789MohdAsif"
-										class="btn btn-white btn-outline-white py-3 px-4">Github</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
+        <div class="container">
+            <div class="row">
+                <div class="text-content">
+                    <span class="subheading">Hi!</span>
+                    <h1>This is <span>Mohd Asif</span></h1>
+                    
+                    <!-- Typing Animation -->
+                    <span id="typing-animation"></span>
+                    
+                    <script>
+                        const typingElement = document.getElementById('typing-animation');
+                        const texts = [
+                            'Graduate',
+                            'Self Learning',
+                            'Data Science',
+                            'Data Analytics',
+                            'Data Visualizations',
+                            'ML Engineering'
+                        ];
+                        
+                        let textIndex = 0;
+                        let charIndex = 0;
+                        let isDeleting = false;
+                        
+                        function typeWriter() {
+                            const currentText = texts[textIndex];
+                            
+                            if (isDeleting) {
+                                typingElement.textContent = currentText.substring(0, charIndex - 1);
+                                charIndex--;
+                            } else {
+                                typingElement.textContent = currentText.substring(0, charIndex + 1);
+                                charIndex++;
+                            }
+                            
+                            let typeSpeed = isDeleting ? 100 : 150;
+                            
+                            if (!isDeleting && charIndex === currentText.length) {
+                                setTimeout(() => isDeleting = true, 2000);
+                            } else if (isDeleting && charIndex === 0) {
+                                isDeleting = false;
+                                textIndex = (textIndex + 1) % texts.length;
+                                setTimeout(typeWriter, 500);
+                                return;
+                            }
+                            
+                            setTimeout(typeWriter, typeSpeed);
+                        }
+                        typeWriter();
+                    </script>
+                    
+                    <h2>Python Programming, Scripting, Data Analysis & Visualization</h2>
+                    <p>
+                        <a href="https://www.linkedin.com/in/mdasif1998/" class="btn btn-primary">LinkedIn</a>
+                        <a href="https://github.com/789MohdAsif" class="btn btn-white">Github</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
@@ -415,69 +440,143 @@
 						<h2>Data & Analytics Projects</h2>
 
 						<!-- Project 1 -->
-						<span class="position">1. H-Mart Store Business Analytics</span>
-						<p class="mt-4">
-							Analyzed 100K+ transactions across 50+ stores using Power BI to uncover key revenue drivers.
-						<ul>
-							<li>Built interactive Power BI dashboards</li>
-							<li>Identified top-performing regions contributing 35% of revenue</li>
-							<li>Automated ETL workflows using SQL and DAX</li>
-						</ul>
-						GitHub: <a href="https://github.com/789MohdAsif/smart-data-Visulazation.git"
-							target="_blank">https://github.com/789MohdAsif/smart-data-Visulazation.git</a>
-						</p>
+						<div class="project-container">
+        <a href="https://github.com/789MohdAsif/smart-data-Visulazation" target="_blank" 
+           class="project-title">
+            1. H-Mart Store Business Analytics
+        </a>
+        
+        <p class="mt-4 description">
+            Analyzed 100K+ transactions across 50+ stores using Power BI to uncover key revenue drivers.
+        </p>
+        
+        <ul>
+            <li>Built interactive Power BI dashboards</li>
+            <li>Identified top-performing regions contributing 35% of revenue</li>
+            <li>Automated ETL workflows using SQL and DAX</li>
+        </ul>
+        
+        <div class="repo-info">
+            <strong>Repository:</strong> 
+            <a href="https://github.com/789MohdAsif/smart-data-Visulazation" 
+               target="_blank" class="repo-link">
+               smart-data-Visulazation
+            </a>
+            <br>
+            <small>*(Contains data analysis tools for Excel-based visualization and filtering, supporting retail transaction insights.)*</small>
+        </div>
+    </div>
 
-						<!-- Project 2 -->
-						<span class="position">2. COVID-19 Data Analytics</span>
-						<p class="mt-4">
-							Analyzed 500K+ COVID-19 records to identify global vaccination trends and regional
-							efficiency differences.
-						<ul>
-							<li>Created interactive visualizations using Python Pandas, Matplotlib, and Seaborn</li>
-							<li>Discovered 40% variance in vaccination efficiency across regions</li>
-							<li>Provided actionable insights for public health resource allocation</li>
-						</ul>
-						GitHub: <a href="https://github.com/789MohdAsif/Covid_19_Visulazations.git"
-							target="_blank">https://github.com/789MohdAsif/Covid_19_Visulazations.git</a>
-						</p>
+<!-- Project 2 -->
+        <div class="project-container">
+            <a href="https://github.com/789MohdAsif/Covid_19_Visulazations" target="_blank" 
+               class="project-title">
+                2. COVID-19 Data Analytics
+            </a>
+            
+            <p class="mt-4 description">
+                Analyzed 500K+ COVID-19 records to identify global vaccination trends and regional efficiency differences.
+            </p>
+            
+            <ul>
+                <li>Created interactive visualizations using Python Pandas, Matplotlib, and Seaborn</li>
+                <li>Discovered 40% variance in vaccination efficiency across regions</li>
+                <li>Provided actionable insights for public health resource allocation</li>
+            </ul>
+            
+            <div class="repo-info">
+                <strong>Repository:</strong> 
+                <a href="https://github.com/789MohdAsif/Covid_19_Visulazations" 
+                   target="_blank" class="repo-link">
+                   Covid_19_Visulazations
+                </a>
+                <br>
+                <small>*(Python-based COVID data analysis & visualizations)*</small>
+            </div>
+        </div>
 
-						<!-- Project 4 -->
-<span class="position">4. Real-Time Weather App</span>
-<p class="mt-4">
-  Developed a responsive web application that provides real-time weather updates for any city using API integration.
-  <ul>
-    <li>Fetched live weather data (temperature, humidity, conditions) using the OpenWeatherMap API</li>
-    <li>Designed an intuitive and responsive interface with HTML, CSS, and JavaScript</li>
-    <li>Enhanced user experience with dynamic icons and error handling for invalid inputs</li>
-  </ul>
-  GitHub: <a href="https://github.com/789MohdAsif/Weather_App.git" target="_blank">https://github.com/789MohdAsif/Weather_App.git</a>
-</p>
+        <!-- Project 3 -->
+        <div class="project-container">
+            <a href="https://github.com/789MohdAsif/Weather_App" target="_blank" 
+               class="project-title">
+                3. Real-Time Weather App
+            </a>
+            
+            <p class="mt-4 description">
+                Developed a responsive web application that provides real-time weather updates for any city using API integration.
+            </p>
+            
+            <ul>
+                <li>Fetched live weather data (temperature, humidity, conditions) using the OpenWeatherMap API</li>
+                <li>Designed an intuitive and responsive interface with HTML, CSS, and JavaScript</li>
+                <li>Enhanced user experience with dynamic icons and error handling for invalid inputs</li>
+            </ul>
+            
+            <div class="repo-info">
+                <strong>Repository:</strong> 
+                <a href="https://github.com/789MohdAsif/Weather_App" 
+                   target="_blank" class="repo-link">
+                   Weather_App
+                </a>
+                <br>
+                <small>*(Real-time weather with API integration)*</small>
+            </div>
+        </div>
 
-						<!-- Project 4 -->
-	
-<span class="position">5. Calculator Web Application</span>
-<p class="mt-4">
-  Created a fully functional calculator using HTML, CSS, and JavaScript to perform basic arithmetic operations.
-  <ul>
-    <li>Implemented core features including addition, subtraction, multiplication, and division</li>
-    <li>Designed a responsive and visually appealing user interface</li>
-    <li>Ensured accurate calculations and seamless user interaction across devices</li>
-  </ul>
-  GitHub: <a href="https://github.com/789MohdAsif/Calculator-Web.git" target="_blank">https://github.com/789MohdAsif/Calculator-Web.git</a>
-</p>
+        <!-- Project 4 -->
+        <div class="project-container">
+            <a href="https://github.com/789MohdAsif/Calculator-Web" target="_blank" 
+               class="project-title">
+                4. Calculator Web Application
+            </a>
+            
+            <p class="mt-4 description">
+                Created a fully functional calculator using HTML, CSS, and JavaScript to perform basic arithmetic operations.
+            </p>
+            
+            <ul>
+                <li>Implemented core features including addition, subtraction, multiplication, and division</li>
+                <li>Designed a responsive and visually appealing user interface</li>
+                <li>Ensured accurate calculations and seamless user interaction across devices</li>
+            </ul>
+            
+            <div class="repo-info">
+                <strong>Repository:</strong> 
+                <a href="https://github.com/789MohdAsif/Calculator-Web" 
+                   target="_blank" class="repo-link">
+                   Calculator-Web
+                </a>
+                <br>
+                <small>*(Responsive calculator with full arithmetic operations)*</small>
+            </div>
+        </div>
 
-						<!-- Project 5 -->
-						<span class="position">5. Portfolio Website</span>
-						<p class="mt-4">
-							Designed and developed a personal portfolio website to showcase projects and skills.
-						<ul>
-							<li>Built using HTML, CSS, and JavaScript</li>
-							<li>Responsive design for all devices</li>
-							<li>Integrated project showcase with GitHub links</li>
-						</ul>
-						GitHub: <a href="https://github.com/789MohdAsif/Portfolie_Website.git"
-							target="_blank">https://github.com/789MohdAsif/Portfolie_Website.git</a>
-						</p>
+        <!-- Project 5 -->
+        <div class="project-container">
+            <a href="https://github.com/789MohdAsif/Portfolie_Website" target="_blank" 
+               class="project-title">
+                5. Portfolio Website
+            </a>
+            
+            <p class="mt-4 description">
+                Designed and developed a personal portfolio website to showcase projects and skills.
+            </p>
+            
+            <ul>
+                <li>Built using HTML, CSS, and JavaScript</li>
+                <li>Responsive design for all devices</li>
+                <li>Integrated project showcase with GitHub links</li>
+            </ul>
+            
+            <div class="repo-info">
+                <strong>Repository:</strong> 
+                <a href="https://github.com/789MohdAsif/Portfolie_Website" 
+                   target="_blank" class="repo-link">
+                   Portfolie_Website
+                </a>
+                <br>
+                <small>*(Complete responsive portfolio with project showcase)*</small>
+            </div>
 
 					</div>
 
@@ -536,7 +635,7 @@
 					<div class="col-md-4 d-flex ftco-animate">
 						<div class="blog-entry justify-content-end">
 							<a href="https://github.com/789MohdAsif/Portfolie_Website.git" class="block-20 zoom-effect"
-								style="background-image: url('images/portfolio_website.png');">
+								style="background-image: url('images/aiml-homepage-01.jpg');">
 							</a>
 							<div class="text mt-3 float-right d-block">
 								<h3 class="heading">
@@ -555,7 +654,7 @@
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
 					<a href="https://github.com/789MohdAsif/Weather_App.git" class="block-20 zoom-effect"
-						style="background-image: url('images/weather_app.png');">
+						style="background-image: url('images/weatherApp.png');">
 					</a>
 					<div class="text mt-3 float-right d-block">
 						<h3 class="heading">
@@ -573,7 +672,7 @@
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry">
 					<a href="https://github.com/789MohdAsif/smart-data-Visulazation.git" class="block-20 zoom-effect"
-						style="background-image: url('images/proj_3.jpg');">
+						style="background-image: url('images/Screenshot\ \(1\).png');">
 					</a>
 					<div class="text mt-3 float-right d-block">
 						<h3 class="heading">
@@ -656,7 +755,7 @@
 							<span class="icon-globe"></span>
 						</div>
 						<h3 class="mb-4">Download Resume</h3>
-						<p><a href="ATSResume.pdf" target="_blank" download>Download Resume (PDF)</a></p>
+						<p><a href="Data_Anlytics.pdf" target="_blank" download>Download Resume (PDF)</a></p>
 					</div>
 				</div>
 
@@ -665,8 +764,11 @@
 					<br>
 					<div class="row justify-content-center">
 						<div class="col-md-7 ftco-animate text-center">
-							<h2>Have a<span> Question? </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77"
-									class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+							<h2>Have a <span>Question?</span></h2>
+<a href="mailto:mohdasif.m1996@gmail.com" class="btn btn-primary py-3 px-5">
+  Click Here
+</a>
+
 						</div>
 					</div>
 					<br>
